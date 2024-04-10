@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,30 +8,83 @@
   </head>
   <body>
     <header>
-      <nav class="hidden md:fixed md:flex justify-center items-center top-0 bg-primary h-12 w-full shadow-lg px-10 z-10">
-        <ul class="flex gap-6 font-bold">
-          <li><a href="#">KOLORMANIA</a></li>
-          <li><a href="#">Naklejki</a></li>
-          <li><a href="#">Banery</a></li>
-          <li><a href="#">Pieczątki</a></li>
-          <li><a href="#">Drukarnia</a></li>
-          <li><a href="#">Gadżety</a></li>
-          <li><a href="#">Nadruki</a></li>
-          <li><a href="#">Cennik</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
+      <nav>
+        <div class="fixed top-0 hidden md:flex justify-center items-center lg:text-xl bg-primary h-12 w-full shadow-lg px-10 z-10">
+          <ul class="flex gap-4 font-bold text-secondary">
+            <li><a href="#">KOLORMANIA</a></li>
+            <li><a href="#pieczatki">Pieczątki</a></li>
+            <li><a href="#druk">Banery</a></li>
+            <li><a href="#druk">Naklejki</a></li>
+            <li><a href="#">Drukarnia</a></li>
+            <li><a href="#">Gadżety</a></li>
+            <li><a href="#">Nadruki</a></li>
+            <li><a href="#">Cennik</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="fixed top-0 md:hidden flex justify-between items-center backdrop-blur-md h-12 w-full px-10 py-6 z-10">
+          <h1 class="text-primary font-bold text-xl"><a href="#">KOLORMANIA</a></h1>
+          <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="40" fill="#ffcc00"><title>menu</title><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg></button>
+        </div>
       </nav>
     </header>
     <main>
-        <section class="h-screen w-full inline-block">
+      <!-- HERO -->
+        <section>
             <figure class="relative">
-                <img src="../assets/kolor_tlo.jpg" alt="" class="w-full opacity-85">
-                <figcaption class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl md:text-7xl">
+                <img src="../assets/kolor_tlo.jpg" alt="" class="w-full opacity-90 shadow-lg">
+                <figcaption class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl xl:text-8xl sm:text-7xl backdrop-blur-sm">
                     <h1 class="text-primary text-center font-bold">PRACOWNIA</h1>
                     <h1 class="text-white text-center font-bold">REKLAMY</h1>
                 </figcaption>
             </figure>
         </section>
+
+      <!-- Pieczątki -->
+      <section class="bg-primary flex flex-col justify-center items-center p-10 h-full gap-10 text-secondary shadow-lg" id="pieczatki">
+        <div>
+          <h1 class="text-4xl lg:text-5xl font-bold text-center">AUTORYZOWANY PARTNER WAGRAF</h1>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-10">
+          <div class="flex-1 flex justify-center">
+            <img src="../assets/wagrafb4_1.png" alt="" class="hidden lg:block" width="300">
+            <img src="../assets/wagrafb4_2.png" alt="" class="lg:hidden">
+          </div>
+          <div class="text-left flex-1">
+            <h1 class="font-bold text-4xl lg:text-5xl my-4">Pieczątki w 5 minut</h1>
+            <h2 class="font-bold text-2xl lg:text-3xl my-4">Pieczątki wykonujemy od ręki, na poczekaniu. Zapraszamy do siedziby firmy lub sklepu internetowego.</h2>
+            <p class="my-4 text-xl">Szeroki wybór pieczątek renomowanych producentów. Zapewniamy precyzyjne wykonanie płytek tekstowych przy użyciu wysokiej jakości urządzeń i materiałów. Nasze pieczątki to duży wybór opraw dostosowanych do indywidualnych potrzeb klienta.</p>
+            <p class="my-4 text-xl">Matryce wykonujemy metodą graweru laserowego w gumie jak również metodą błyskową typu "flash".</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Druk i folie -->
+      <section class="flex flex-col lg:flex-row gap-10 p-10" id="druk">
+        <div class="flex-1">
+          <h1 class="text-center text-3xl lg:text-4xl font-bold">Drukarnia wielkoformatowa</h1>
+          <img src="../assets/epson_plotter_image3.png" alt="">
+          <p class="text-3xl mt-3 font-bold">Oferujemy:</p>
+          <ul class="list-disc text-xl mt-3">
+            <li>Precyzyjne i dokładne wydruki</li>
+            <li>Doskonała jakość wydruku, rozdzielczość 1440 x 1440 dpi.</li>
+            <li>Szeroki wachlarz zastosowań: drukujemy na różnych materiałach, takich jak:<br>
+              baner, folia, canvas, rollup, papier graficzny i fotograficzny
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <h1 class="text-center text-3xl lg:text-4xl font-bold">Laminowanie wydruków wielkoformatowych</h1>
+          <img src="../assets/ecoroll.png" alt="">
+          <p class="text-3xl mt-3 font-bold">Laminowanie wydłuża trwałość i żywotność naklejek poprzez:</p>
+          <ul class="list-disc text-xl mt-3">
+            <li>Zwiększoną odporność na ścieranie.</li>
+            <li>Ochronę wydruku przed promieniowaniem UV.</li>
+            <li>Większą łatwość naklejania dzięki powiększonej grubości naklejki.</li>
+            <li>Możliwość długotrwałej ekspozycji zewnętrznej.</li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>
