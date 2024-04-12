@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kolormania</title>
+    <meta name="description" content="Pracownia reklamy w Lublinie, kolormania. Banery, pieczątki w 5 minut, wizytówki, nadruki, naklejki, rollupy, plakaty, canvas, plandeka. Druk wielkoformatowy">
+		<meta property="og:title" content="Banery, naklejki, pieczątki w 5 minut, wizytówki, nadruki. Drukarnia wielkoformatowa">
+    <meta property="og:description" content="Pracownia reklamy w Lublinie, kolormania. Banery, pieczątki w 5 minut, wizytówki, nadruki, naklejki, rollupy, plakaty, canvas, plakaty. Druk wielkoformatowy">
+    <meta property="og:url" content="https://kolormania.pl">
     <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="font-montserrat">
     <header>
       <nav>
         <div class="fixed top-0 hidden md:flex justify-center items-center lg:text-xl bg-primary h-12 w-full shadow-lg px-10 z-10">
@@ -15,11 +22,10 @@
             <li><a href="#pieczatki">Pieczątki</a></li>
             <li><a href="#druk">Banery</a></li>
             <li><a href="#druk">Naklejki</a></li>
-            <li><a href="#">Drukarnia</a></li>
-            <li><a href="#">Gadżety</a></li>
-            <li><a href="#">Nadruki</a></li>
-            <li><a href="#">Cennik</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="#wizytowki">Drukarnia</a></li>
+            <li><a href="#gadzety">Gadżety</a></li>
+            <li><a href="#nadruki">Nadruki</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
           </ul>
         </div>
         <div class="fixed top-0 md:hidden flex justify-between items-center backdrop-blur-md h-12 w-full px-10 py-6 z-10">
@@ -32,7 +38,7 @@
       <!-- HERO -->
         <section>
             <figure class="relative">
-                <img src="../assets/kolor_tlo.jpg" alt="" class="w-full opacity-90 shadow-lg">
+                <img src="./assets/kolor_tlo.jpg" alt="" class="w-full opacity-90 shadow-lg">
                 <figcaption class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl xl:text-8xl sm:text-7xl backdrop-blur-sm">
                     <h1 class="text-primary text-center font-bold">PRACOWNIA</h1>
                     <h1 class="text-white text-center font-bold">REKLAMY</h1>
@@ -42,17 +48,18 @@
 
       <!-- Pieczątki -->
       <section class="bg-primary flex flex-col justify-center items-center p-10 h-full gap-10 text-secondary shadow-lg" id="pieczatki">
-        <div>
-          <h1 class="text-4xl lg:text-5xl font-bold text-center">AUTORYZOWANY PARTNER WAGRAF</h1>
+        <div class="flex flex-col justify-center items-center">
+          <h1 class="text-4xl lg:text-5xl font-bold text-center">AUTORYZOWANY PARTNER</h1>
+          <img src="./assets/logo_wagraf.png" alt="" width="400">
         </div>
         <div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-10">
           <div class="flex-1 flex justify-center">
-            <img src="../assets/wagrafb4_1.png" alt="" class="hidden lg:block" width="300">
-            <img src="../assets/wagrafb4_2.png" alt="" class="lg:hidden">
+            <img src="./assets/wagrafb4_1.png" alt="" class="hidden lg:block" width="300">
+            <img src="./assets/wagrafb4_2.png" alt="" class="lg:hidden">
           </div>
           <div class="text-left flex-1">
             <h1 class="font-bold text-4xl lg:text-5xl my-4">Pieczątki w 5 minut</h1>
-            <h2 class="font-bold text-2xl lg:text-3xl my-4">Pieczątki wykonujemy od ręki, na poczekaniu. Zapraszamy do siedziby firmy lub sklepu internetowego.</h2>
+            <h2 class="font-bold text-2xl lg:text-3xl my-4">Pieczątki wykonujemy od ręki, na poczekaniu. Zapraszamy do siedziby firmy.</h2>
             <p class="my-4 text-xl">Szeroki wybór pieczątek renomowanych producentów. Zapewniamy precyzyjne wykonanie płytek tekstowych przy użyciu wysokiej jakości urządzeń i materiałów. Nasze pieczątki to duży wybór opraw dostosowanych do indywidualnych potrzeb klienta.</p>
             <p class="my-4 text-xl">Matryce wykonujemy metodą graweru laserowego w gumie jak również metodą błyskową typu "flash".</p>
           </div>
@@ -60,10 +67,10 @@
       </section>
 
       <!-- Druk i folie -->
-      <section class="flex flex-col lg:flex-row gap-10 p-10" id="druk">
+      <section class="flex flex-col lg:flex-row gap-10 p-10 h-full" id="druk">
         <div class="flex-1">
           <h1 class="text-center text-3xl lg:text-4xl font-bold">Drukarnia wielkoformatowa</h1>
-          <img src="../assets/epson_plotter_image3.png" alt="">
+          <img src="./assets/epson_plotter_image3.png" alt="">
           <p class="text-3xl mt-3 font-bold">Oferujemy:</p>
           <ul class="list-disc text-xl mt-3">
             <li>Precyzyjne i dokładne wydruki</li>
@@ -72,10 +79,38 @@
               baner, folia, canvas, rollup, papier graficzny i fotograficzny
             </li>
           </ul>
+          <div class="flex flex-col gap-2 mt-10">
+            <h1 class="text-3xl font-bold">Banery</h1>
+            <p class="text-xl">Druk na banerach laminowanych lub powlekanych. Oczkowane standardowo co 50 cm</p>
+          </div>
+          <div class="flex flex-col gap-2 mt-10">
+            <h1 class="text-3xl font-bold">Naklejki</h1>
+            <p class="text-xl">Folia samoprzylepna monomerowa, polimerowa, szroniona, one way vision</p>
+          </div>
+          <div class="flex flex-col gap-2 mt-10">
+            <h1 class="text-3xl font-bold">Naklejki laminowane</h1>
+            <p class="text-xl">Zabezpieczenie folii przed uszkodzeniami mechanicznymi oraz promieniami UV</p>
+          </div>
+          <div class="flex flex-col gap-2 mt-10">
+            <h1 class="text-3xl font-bold">Rollupy</h1>
+            <p class="text-xl">System prezentacyjny z rozwijaną i chowaną w kasecie grafiką</p>
+          </div>
+          <div class="flex flex-col gap-2 mt-10">
+            <h1 class="text-3xl font-bold">Wycinanie ploterowe</h1>
+            <p class="text-xl">Nacinanie, wycinanie, cięcie na pojedyncze użytki</p>
+          </div>
+          <div class="flex flex-col gap-2 mt-10">
+            <h1 class="text-3xl font-bold">Canvas</h1>
+            <p class="text-xl">Idealny do reprodukcji obrazów, krajobrazów, portretów i fotografii ślubnej. Struktura płótna</p>
+          </div>
+          <div class="flex flex-col gap-2 mt-10">
+            <h1 class="text-3xl font-bold">Plakaty</h1>
+            <p class="text-xl">Wielkoformatowe, standardowe lub w dowolnym rozmiarze</p>
+          </div>
         </div>
         <div class="flex-1">
           <h1 class="text-center text-3xl lg:text-4xl font-bold">Laminowanie wydruków wielkoformatowych</h1>
-          <img src="../assets/ecoroll.png" alt="">
+          <img src="./assets/ecoroll.png" alt="">
           <p class="text-3xl mt-3 font-bold">Laminowanie wydłuża trwałość i żywotność naklejek poprzez:</p>
           <ul class="list-disc text-xl mt-3">
             <li>Zwiększoną odporność na ścieranie.</li>
@@ -83,8 +118,159 @@
             <li>Większą łatwość naklejania dzięki powiększonej grubości naklejki.</li>
             <li>Możliwość długotrwałej ekspozycji zewnętrznej.</li>
           </ul>
+          <div class="flex flex-col gap-2 mt-10">
+            <h1 class="text-3xl font-bold">Plakaty</h1>
+            <p class="text-xl">Wielkoformatowe, standardowe lub w dowolnym rozmiarze</p>
+          </div>
+          <div class="flex flex-col gap-2 mt-10">
+            <h1 class="text-3xl font-bold">Szroniona</h1>
+            <p class="text-xl">Stosowana na szyby dla uzyskania efektu oszronienia lub nadania efektu piaskowania</p>
+          </div>
+          <div class="flex flex-col gap-2 mt-10">
+            <h1 class="text-3xl font-bold">One Way Vision</h1>
+            <p class="text-xl">Półprzeźroczyste właściwości. Pozwala na pełen kolorowy zadruk po stronie zewnętrznej</p>
+          </div>
+          <div class="flex flex-col gap-2 mt-10">
+            <h1 class="text-3xl font-bold">Laminaty</h1>
+            <p class="text-xl">Zabezpieczenie folii przed uszkodzeniami mechanicznymi oraz promieniami UV</p>
+          </div>
         </div>
       </section>
+
+      <!-- Wizytówki -->
+      <section class="bg-primary flex flex-col justify-center items-center p-10 h-full gap-10 text-secondary shadow-lg" id="wizytowki">
+        <div>
+          <h1 class="text-4xl lg:text-5xl font-bold text-center">Wizytówki, ulotki, kalendarze</h1>
+          <h2 class="text-xl lg:text-2xl my-10 text-center max-w-[60rem]">Znajdziesz u nas karty plastikowe, plakaty, kalendarze, zaproszenia, naklejki i wiele innych produktów. Oferujemy druk offsetowy, a także druk cyfrowy.</h2>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-10">
+          <div>
+            <h1 class="text-3xl font-bold my-4">Wizytówki</h1>
+            <p class="text-xl">Są często pierwszym elementem prezentacji firmy, dlatego druk wizytówek jest naszą specjalnością</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold my-4">Ulotki</h1>
+            <p class="text-xl">Najtańsza forma przekazywania informacji o swoich usługach i produktach</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold my-4">Kalendarze</h1>
+            <p class="text-xl">Stanowią elegancki, mile widziany upominek. Ich najważniejsze zalety to użyteczność i nienachalność</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold my-4">Katalogi</h1>
+            <p class="text-xl">Pomieści zarówno bogatą treść, jak i duże zdjęcia wydrukowane w bardzo dobrej jakości</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold my-4">Ulotki składane</h1>
+            <p class="text-xl">Jeszcze więcej miejsca na Twoją reklamę. Składane ulotki pozwalają szerzej zaprezentować ofertę firmy</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold my-4">Menu</h1>
+            <p class="text-xl">Niech klienci nabierają apetytu, oglądając Twoje menu szyte na miarę potrzeb</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold my-4">Notesy</h1>
+            <p class="text-xl">Każdy lubi mieć pod ręką coś do notowania. Przy okazji mogą tam się znaleźć dane Twojej firmy</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold my-4">Teczki ofertowe</h1>
+            <p class="text-xl">Zrób dobre wrażenie i rozpal ciekawość swoich klientów, a najlepsze zostaw w środku</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold my-4">Papier firmowy</h1>
+            <p class="text-xl">Pozwala na przygotowanie profesjonalnie wyglądających dokumentów</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold my-4">Zaproszenia</h1>
+            <p class="text-xl">Składane na pół idealnie nadają się na eleganckie zaproszenia oraz kartki świąteczne i okolicznościowe</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold my-4">Dyplomy</h1>
+            <p class="text-xl">Są takie dokumenty, które po prostu muszą prezentować się wyjątkowo</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold my-4">Foldery</h1>
+            <p class="text-xl">Składane foldery pozwalają szerzej zaprezentować ofertę firmy niż tradycyjne ulotki</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gadżety -->
+      <section class="flex flex-col lg:flex-row justify-center items-center p-10 h-full gap-10 text-secondary" id="gadzety">
+        <div class="flex-1 flex flex-col">
+          <h1 class="text-6xl font-bold my-4">Gadżety</h1>
+          <p class="text-xl my-4">Gadżety reklamowe to okazja do wykorzystania najskuteczniejszych narzędzi marketingowych i wizerunkowych. Przygotujemy szybko i bezpłatnie wizualizację na każdym dostępnym gadżecie w katalogu. Indywidualnie przygotowany projekt pomoże w wyróżnieniu się na tle konkurencji.</p>
+          <h2 class="text-2xl font-bold my-4">Katalog gadżetów online</h2>
+          <a class="w-48 h-12 bg-primary text-center flex justify-center items-center font-bold text-xl" href="https://kolormania.royaldesign.eu/products">Royal Design</a>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <img src="./assets/termiczny.png" alt="">
+        </div>
+      </section>
+
+      <!-- Nadruki -->
+      <section class="bg-primary flex flex-col lg:flex-row justify-center items-center p-10 h-full gap-10 text-secondary shadow-lg" id="nadruki">
+        <div class="flex-1">
+          <div class="relative">
+            <div class="flex justify-center items-center">
+              <img src="./assets/koszulka.png" alt="" class="flex-1 min-w-0">
+              <img src="./assets/kubek.png" alt="" class="flex-1 min-w-0 scale-90">
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <h1 class="font-bold text-4xl lg:text-5xl my-4">Nadruki</h1>
+          <h2 class="text-2xl font-bold my-4">Jedno i wielokolorowe</h2>
+          <p class="text-xl my-4">Zajmujemy się projektowaniem oraz wykonaniem nadruków według wzorów i potrzeb klienta, takich jak: logo, napis, grafika, zdjęcie itp. Nadruki na koszulkach i innych tekstyliach wykonujemy za pomocą folii flex i flock.</p>
+          <p class="text-xl my-4">Posiadamy w ofercie koszulki o różnej gramaturze: 100% bawełna i bawełna supima, 100% poliester oraz koszulki z domieszką elastanu. Również wykonujemy zlecenia na odzieży powierzonej. Wycena oraz wizualizacja szybka i bezpłatna.</p>
+          <div class="bg-white rounded-2xl w-96 h-40 my-4">
+            <h1 class="text-2xl font-bold p-4 hover:underline"><a href="https://onlinecatalog.malfini.com/kolormania/pl/catalog">Katalog odzieży</a></h1>
+            <p class="text-xl p-4">Różne kroje i grubości materiału. Szeroka gama kolorów</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Kontakt -->
+      <section class="bg-secondary flex flex-col justify-center items-center p-10 h-full gap-10 text-white shadow-lg" id="kontakt">
+        <h1 class="font-bold text-4xl lg:text-5xl my-4">Kontakt</h1>
+        <p class="text-2xl">Skontaktuj się w wygodny dla Ciebie sposób: telefonicznie lub pocztą e-mail</p>
+        <div class="flex flex-col lg:flex-row gap-10">
+          <div class="flex gap-10 flex-1">
+            <div>
+              <img src="./assets/icon_contakt.png" alt="">
+            </div>
+            <div>
+              <h1 class="font-bold text-xl lg:text-2xl my-4">tel. 81 479 78 48</h1>
+              <h1 class="font-bold text-xl lg:text-2xl my-4">tel. 578 903 703</h1>
+              <h1 class="font-bold text-xl lg:text-2xl my-4">biuro@kolormania.pl</h1>
+              <h2 class="font-bold">Godziny otwarcia:</h2>
+              <p>Poniedziałek - Czwartek</p>
+              <p>8:00 - 16:00</p>
+              <p>Piątek</p>
+              <p>8:00 - 15:00</p>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h1 class="font-bold text-xl lg:text-2xl my-4">Dojazd</h1>
+            <p class="my-4">ul. Leszczyńskiego 36</p>
+            <p class="my-4">20-068, Lublin</p>
+            <div class="">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.2774667992007!2d22.54444101221366!3d51.25080042929855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a34d6f57fe633%3A0x4bc9de8dc731e60d!2sKolormania!5e0!3m2!1sen!2spl!4v1712913531132!5m2!1sen!2spl" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stopka -->
+      <footer class="bg-footer text-center py-10 px-24 text-white gap-10">
+        <div class="flex flex-col items-center">
+          <img src="./assets/logo2.png" alt="">
+          <p class="my-10">Druk wielkoformatowy - Pieczątki w 5 minut - Wizytówki - Koszulki z nadrukiem - Ulotki - Kalendarze - Katalogi - Foldery - Menu - Notesy - Teczki Ofertowe - Papier firmowy - Zaproszenia - Dyplomy - Banery - Roll-upy - Plakaty - Naklejki - Siatka Mesh - Canvas - Papier fotograficzny - Magnesy na samochody - Grawerowanie laserem - Styrodur - Gadżety - Długopisy - Smycze - Torby reklamowe - i inne</p>
+        </div>
+      </footer>
+      <div class="bg-footer2 text-white h-20 flex justify-center items-center">
+        © 2010-2024 by Multikurier.pl | Wszelkie prawa zastrzeżone
+      </div>
     </main>
   </body>
 </html>
