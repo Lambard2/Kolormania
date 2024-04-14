@@ -14,3 +14,16 @@ list.forEach((li) => {
         menu.style.display = "none"
     })
 })
+
+window.addEventListener("scroll", (e) => {
+    let scroll = this.scrollY
+    let menuKolor = document.getElementById("menu-kolormania")
+    let button = document.querySelector("#menu-button1 svg")
+    if (scroll >= 230){
+        menuKolor.style.color = "black"
+        button.setAttribute("fill", "black")
+    }else{
+        menuKolor.style.color = "#FFCC00"
+        button.setAttribute("fill", "#FFCC00")
+    }
+})
